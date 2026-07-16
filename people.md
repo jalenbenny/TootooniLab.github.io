@@ -4,139 +4,234 @@ title: People
 permalink: /people/
 ---
 
-**Dr. Mohammad Samie Tootooni**
+<style>
+  .roster {
+    --navy: #1B2A4A;
+    --slate: #4A5A72;
+    --paper: #EDF1F5;
+    --card: #FFFFFF;
+    --amber: #C97A2B;
+    --hairline: #D8DFE7;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--navy);
+  }
 
-<figure>
-    <a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/mtootooni.jpg?raw=true"  width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        I am an Assistant Professor in the Department of Health Informatics and Data Science with a secondary appointment in the Center for Health Outcomes and Informatics Research at Loyola University Chicago. I received my PhD in Industrial and Systems Engineering (ISE) from Binghamton University in 2016. Prior to joining Loyola, I was a Postdoctoral Research Associate in the Department of Health Sciences Research at Mayo Clinic in Rochester, Minnesota, for two years.
-My research lies in the intersection of decision science and artificial intelligence, which furthers knowledge of monitoring of and predictive analytics for complex healthcare systems. I am particularly interested in the role of data science and Artificial Intelligence tools such as Machine Learning and Natural Language Processing in development of clinical decision support models. Having an Industrial and Systems Engineering background, I am also interested to apply systems thinking, quality assurance, and optimization principles to improve health outcomes. Furthermore, I teach courses such as ontologies (knowledge representation) in health and Natural Language Processing.
-</figcaption>
-</figure>
-<br>
+  .roster * {
+    box-sizing: border-box;
+  }
 
+  .roster-intro {
+    max-width: 640px;
+    margin: 0 0 2.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--hairline);
+  }
 
-**Nafiesh Mollaei, Postdoc Fellow**
+  .roster-eyebrow {
+    font-family: 'Courier New', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 0.5rem;
+  }
 
-<figure>
-    <a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/mollaei.png?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        My research focuses on the use of Artificial Intelligence (AI) algorithms to prevent adverse health outcomes. I’m using Large Language Models (LLMs) to transform the field by extracting valuable insights from unstructured data, such as Electronic Health Records. By identifying crucial data points for population health management and clinical trials, I propose that LLMs can be helpful to facilitate the development of therapeutic Inertia.
-</figcaption>
-</figure>
-<br>
+  .roster-intro h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin: 0 0 0.6rem 0;
+    color: var(--navy);
+  }
 
+  .roster-intro p {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--slate);
+    margin: 0;
+  }
 
-**Neelam ​Balasubramanian, MS**
+  .roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
 
-<figure>
-    <a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/balasubramanian.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        Hi! I’m Neelam Balasubramanian. I have a master’s in Health Informatics from Loyola University and bachelor’s in Biology with a specialization in Endocrinology from the University of Chicago. My interest is in creating implementable solutions to improve healthcare. I work on projects relating to clinical natural language processing and classification algorithms. I also have experience with biostatistics, electronic health record systems and data warehouses, and healthcare workflows
-</figcaption>
-</figure>
-<br>
+  .card {
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    position: relative;
+  }
 
+  .card::before {
+    content: attr(data-index);
+    position: absolute;
+    top: 1.1rem;
+    right: 1.3rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: var(--hairline);
+  }
 
-**Michael Saban**
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+  }
 
-<figure>
-<a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/saban.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        I am a graduate student with a BS in Biology at Loyola University Chicago, where I'm also pursuing a MS in Bioinformatics. I am currently a graduate intern in Dr. Tootooni's lab, where I am currently working on a project that analyzes the contributing factors of therapeutic inertia within elderly hypertensive patients. My specific role involves linking geospatial determinants of health to patient addresses at census boundary levels. This, along with further contextual information from other aspects of the project will provide insight into whether the geospatial features of the location in which a patient resides has any influence on the occurrence of therapeutic inertia.
-</figcaption>
-</figure>
-<br>
+  .avatar {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
 
+  .card-header h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--navy);
+  }
 
-**Grant Hiura, MPH**
+  .role {
+    font-family: 'Courier New', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    color: var(--slate);
+    margin-top: 0.15rem;
+  }
 
-<figure>
-<a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/hiura.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        I am a Medical Student at Loyola University’s Stitch School of Medicine and my current project focuses on EMS-ED-Stroke. Life-saving treatments for strokes are time-sensitive and require rapid triage and transport to the appropriate stroke system of care. Prehospital data, recorded by Emergency Medical Services (EMS), can be used to develop early diagnosis tools, often using artificial intelligence (AI). By improving the quality and quantity of prehospital EMS data and ensuring its interoperability with Emergency Department (ED) data, AI-based clinical tools can be made more accurate, leading to earlier diagnosis of time-sensitive conditions such as stroke. Thus, I am excited for this project because we aim to characterize the availability and distributions of prehospital data, then examine the reliability of prehospital data by comparing EMS measurements with those acquired upon ED arrival.
+  .bio {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #33415A;
+    margin: 0;
+  }
 
-</figcaption>
-</figure>
-<br>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--hairline);
+  }
 
+  .tag {
+    font-family: 'Courier New', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.03em;
+    color: var(--amber);
+    background: #FBF0E4;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+  }
+</style>
 
-**Rachel Brown**
+<div class="roster">
 
-<figure>
-<a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/brown.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        Hello everyone! I am an Undergraduate Student majoring in Biochemistry and Molecular Biology at Lincoln University, Pa, and I’m currently working on this advanced development platform, GitHub, for Dr.Tootooni's Lab, analyzing the uses and benefits that it can provide in an academic lab. Also, to determine how much more efficient it would make academic research. This project will be focused on the key features—Issues, Wiki, and Branches, examining their uses and benefits in an academic lab. Though I am currently working on this project, I also have the opportunity to learn about everyone's research in the lab. It is such an amazing experience that broadens my horizon on the different fields of science and also teaches me a lot about data science and Artificial intelligence.
+  <div class="roster-intro">
+    <div class="roster-eyebrow">Health Informatics &amp; Data Science Lab</div>
+    <h1>People</h1>
+    <p>The lab at Loyola University Chicago, working at the intersection of artificial intelligence and clinical care.</p>
+  </div>
 
-</figcaption>
-</figure>
-<br>
+  <div class="roster-grid">
 
+    <div class="card" data-index="01">
+      <div class="card-header">
+        <div class="avatar">AV</div>
+        <div>
+          <h2>Alessandra Vellucci</h2>
+          <div class="role">Graduate Research Assistant</div>
+        </div>
+      </div>
+      <p class="bio">Alessandra Vellucci is a Graduate Research Assistant in the Health Informatics and Data Science Lab at Loyola University Chicago. Her research interests include artificial intelligence, natural language processing, clinical informatics, and machine learning applications in healthcare. She is currently working on clinical concept extraction and chunk detection from electronic health records using Spark NLP, while also contributing to an AI-as-a-Judge project designed to evaluate and validate the performance, reliability, and safety of AI systems used in healthcare applications.</p>
+      <div class="tags">
+        <span class="tag">NLP</span>
+        <span class="tag">Clinical Informatics</span>
+        <span class="tag">Spark NLP</span>
+        <span class="tag">AI Evaluation</span>
+      </div>
+    </div>
 
-**Shawn Liu**
+    <div class="card" data-index="02">
+      <div class="card-header">
+        <div class="avatar">M</div>
+        <div>
+          <h2>Maryum</h2>
+          <div class="role">Data Science Master's Student</div>
+        </div>
+      </div>
+      <p class="bio">I am a Data Science master's student with a background in Bioinformatics in Dr. Tootooni's research group. I am particularly interested in healthcare applications of data science. Currently, I am contributing to projects involving topic modeling and the analysis of stroke triage and mis-triage in clinical settings.</p>
+      <div class="tags">
+        <span class="tag">Topic Modeling</span>
+        <span class="tag">Stroke Triage</span>
+        <span class="tag">Bioinformatics</span>
+      </div>
+    </div>
 
-<figure>
-<a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/liu.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        Hello! I am currently a rising sophomore studying Biology at Loyola University Chicago's Lakeshore campus. The project that I am currently working on is the creation, organization, and management of the Tootooni lab website using the platform, Weebly, GitHub, and the official Loyola platform, Terminal 4. I will also be assisting Grant in his EMS-ED project by helping him sort out information on stroke hospitals​. Through making the website and interactions with the lab members, I have the chance to learn about all of their work. From understanding how Natural Language Processing works to Geospatial Analysis, I have gained a plethora of knowledge regarding everyone's work.
-</figcaption>
-</figure>
-<br>
+    <div class="card" data-index="03">
+      <div class="card-header">
+        <div class="avatar">U</div>
+        <div>
+          <h2>Ubeyd</h2>
+          <div class="role">Research Assistant, Parkinson School of Health Sciences and Public Health</div>
+        </div>
+      </div>
+      <p class="bio">I am a Research Assistant in the Parkinson School of Health Sciences and Public Health, and recently completed my M.S. in Business Data Analytics at Loyola University Chicago. My primary research focuses on healthcare analytics, health economics, and AI driven decision support systems. I currently lead a stroke triage project investigating the clinical and economic burden of patient mis-triage using nationwide emergency department data (HCUP). My broader interests include healthcare operations, predictive modeling, and the use of data science to improve patient outcomes.</p>
+      <div class="tags">
+        <span class="tag">Health Economics</span>
+        <span class="tag">Stroke Triage</span>
+        <span class="tag">Decision Support</span>
+      </div>
+    </div>
 
+    <div class="card" data-index="04">
+      <div class="card-header">
+        <div class="avatar">PA</div>
+        <div>
+          <h2>Pharel Adjeyi</h2>
+          <div class="role">BSN Student, Loyola Lakeshore Campus</div>
+        </div>
+      </div>
+      <p class="bio">Hi everyone! I'm Pharel Adjeyi, a rising third-year Bachelor of Science in Nursing student at Loyola University Chicago's Lakeshore Campus. This summer, I'm conducting a research project evaluating the use of artificial intelligence visualization tools in healthcare research. My work focuses on assessing various AI platforms based on their ability to generate accurate, clear, and effective visualizations for academic and clinical research settings. Through this project, I aim to explore the strengths, limitations, usability, and potential risks associated with using AI-generated visual content in healthcare research, while identifying best practices for their responsible implementation.</p>
+      <div class="tags">
+        <span class="tag">AI Visualization</span>
+        <span class="tag">Nursing</span>
+        <span class="tag">Research Methods</span>
+      </div>
+    </div>
 
-**Sushritha Konda​**
+    <div class="card" data-index="05">
+      <div class="card-header">
+        <div class="avatar">A</div>
+        <div>
+          <h2>Adnan</h2>
+          <div class="role">Medical Student, Loyola Stritch School of Medicine, Class of 2027</div>
+        </div>
+      </div>
+      <p class="bio">I'm a medical student at Loyola Stritch (Class of 2027). My research examines how AI/ML tools translate into real clinical impact at the system, provider, and patient level. I serve as first author on a study of paramedic perceptions of an ML-based stroke triage tool, and as a co-investigator on a retrospective study quantifying the financial burden of stroke mistriage at non-specialized hospitals.</p>
+      <div class="tags">
+        <span class="tag">Clinical AI</span>
+        <span class="tag">Stroke Triage</span>
+        <span class="tag">Health Economics</span>
+      </div>
+    </div>
 
-<figure>
-<a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/konda.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        I am Sushritha Konda, a graduate student in health informatics program at Indiana University-Purdue University, Indianapolis (IUPUI). Being a passionate and diligent student, I have published an article from my academic project in national as well as international journals during my under graduation and actively participated in data analysis using programming languages during my graduation. Presently, I am working as an intern for a project conducted by Prof. Mohammad Samie Tootooni in the department of health informatics and Data science where his research is focused on analyzing the quality of antibiotic dosing among the ICU patients using MIMIC and eICU datasets. I shall contribute my theoretical knowledge that I have gained from my coursework by performing appropriate data analysis, literature review, and explore the usage of Artificial Intelligence in developing the decision support tools.
-</figcaption>
-</figure>
-<br>
-
-
-**Alireza Kasaie**
-
-<figure>
-<a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/kasaie.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        My name is Alireza Kasaie, a Ph.D. candidate at the University of Missouri-Columbia. I have a specialization in Industrial and Systems Engineering. My current research is centered around the application of supervised machine learning algorithms and simulation modeling within healthcare systems. Additionally, I hold a minor in Healthcare Analytics and Human-Centered Systems. My primary focus lies in enhancing psychiatric clinical scheduling efficiency through the implementation of predictive and prescriptive analytics methodologies.
-</figcaption>
-</figure>
-<br>
-
-
-**Behnaz Eslami**
-
-<figure>
-<a href="../images/mtootooni.jpg">
-        <img src="https://github.com/TootooniLab/TootooniLab.github.io/blob/master/images/behnax.jpeg?raw=true" width="150px" height="150px" align="left" style="padding: 10px;"/>
-    </a>
-<figcaption>
-        My name is Behnaz Eslami. I am a highly motivated Computer Science Ph.D. student at the University of Nebraska Lincoln, with a passion for utilizing cutting-edge technology to solve complex problems in the field of healthcare. I have a solid educational background, having earned my master's degree in Information Technology Engineering from Islamic Azad University Science and Research in Tehran.
-​
-    In my current research project, I am leveraging the power of Large Language Models (LLMs) to analyze vast amounts of unstructured clinical data, such as electronic health records and medical literature. By training these models to recognize and extract clinical entities and concepts, my work has the potential to significantly improve the speed and accuracy of clinical decision-making, ultimately leading to better patient outcomes and more efficient healthcare delivery.</figcaption>
-</figure>
-<br>
-
-
-
-
+  </div>
+</div>
