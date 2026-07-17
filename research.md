@@ -30,3 +30,50 @@ The United States has over 6 million adults suffering from heart failure, a cond
 <br>
 Picture from Journal of Molecular and Cellular Cardiology
 
+## PREHOSPITAL STROKE TRIAGE
+When a stroke occurs, minutes matter. Paramedics in the field need a fast, reliable way to recognize a stroke in progress and route the patient to the right level of care before they ever reach a hospital door. This project develops and validates machine learning models on emergency medical services (EMS) data to predict stroke and severe stroke events at the point of first contact. The work goes beyond the model itself, including a workflow and implementation study built alongside paramedics and clinicians, along with a study examining how paramedics themselves perceive and trust an ML-based triage tool in practice.
+<br>
+
+## ECONOMIC BURDEN OF STROKE MIS-TRIAGE
+Not every stroke patient ends up at the hospital best equipped to treat them. When a patient is mis-triaged, sent to a non-specialized hospital instead of a comprehensive stroke center, the clinical and financial costs can be substantial. This project uses nationwide emergency department data (HCUP) to quantify the scale of that burden, examining how often mis-triage occurs and what it costs patients and the healthcare system in retrospective analysis.
+<br>
+
+## TOPIC MODELING OF STROKE TRIAGE PATTERNS
+Working alongside the mis-triage research above, this project applies topic modeling to clinical data to surface recurring patterns in how stroke patients are triaged, and where mis-triage tends to occur. The goal is to give the broader stroke triage work a clearer picture of the patterns hiding in the data.
+<br>
+
+## CLINICAL CONCEPT EXTRACTION FROM EHR
+Electronic health records hold most of a patient's clinical picture in free text rather than structured fields, which makes that information hard to search, compare, or feed into downstream models. This project uses Spark NLP to perform clinical concept extraction and chunk detection directly from EHR text, turning unstructured notes into usable, structured clinical concepts.
+<br>
+
+## AI-AS-A-JUDGE FOR HEALTHCARE AI SYSTEMS
+As more AI tools make their way into clinical workflows, someone has to answer a harder question: how do we know if the AI itself is working well, and working safely? This project builds an AI-as-a-Judge framework designed to evaluate and validate the performance, reliability, and safety of AI systems before and after they're deployed in healthcare settings.
+<br>
+
+## SCHEMA-GUIDED CLINICAL INFORMATION EXTRACTION
+Nursing documentation is dense, fast-written, and highly variable in structure, which makes it difficult to extract consistent, structured information at scale. This project combines a hybrid dense and BM25 retrieval system with a large language model verification stage to pull schema-guided clinical information out of nursing dictations. The work was developed for the MEDIQA-SYNUR 2026 shared task.
+<br>
+
+## MULTIMODAL CLINICAL OUTCOME MODELING
+Patient outcomes rarely depend on just one type of data. This project builds an end-to-end multimodal fusion pipeline on the MIMIC-IV dataset to predict 30-day post-discharge mortality, comparing early, intermediate, and late fusion strategies for combining structured EHR data with clinical notes. The pipeline draws on a range of models, including TabPFN, XGBoost, and BioClinical-ModernBERT, alongside a LoRA fine-tuned Llama-3 combined through adapter merging.
+<br>
+
+## KNOWLEDGE GRAPH-ENHANCED LLM REASONING
+Large language models are good at generating fluent answers, but not always grounded ones, especially when reasoning about how a drug, disease, and gene relate to one another. This project integrates the PrimeKG biomedical knowledge graph with large language models to see whether structured graph context can improve the accuracy of that reasoning.
+<br>
+
+## AKI STAGING AND BASELINE CREATININE ESTIMATION
+Diagnosing acute kidney injury (AKI) accurately depends on knowing a patient's baseline kidney function, which isn't always known and often has to be estimated. This project builds an AKI staging detection pipeline based on KDIGO criteria, comparing baseline serum creatinine back-calculation methods, CKD-EPI 2021 and MDRD, across a range of clinical scenarios to identify the most reliable approach.
+<br>
+
+## FORECASTING INFLUENZA-LIKE ILLNESS
+Public health teams can respond faster to a flu outbreak if they can see it coming. This project trains a Transformer model to forecast Influenza-Like Illness (ILI) cases from over 50,000 weekly records, cutting forecast error (RMSE) by 63 percent compared to a traditional ARIMA approach and outperforming LSTM models on long-term temporal patterns, supporting earlier outbreak detection and intervention.
+<br>
+
+## EYE MOVEMENT ANALYSIS FOR PARKINSON'S DIAGNOSIS
+Parkinson's disease affects how the eyes move long before many other symptoms become obvious, which opens the door to earlier, non-invasive diagnosis. This project uses a computer vision pipeline to analyze eye-tracking video and extract clinical biomarkers, such as saccade velocity, that can support quantitative, scalable assessment of ocular motor behavior in clinical decision-making.
+<br>
+
+## EVALUATING AI VISUALIZATION TOOLS IN HEALTHCARE RESEARCH
+As AI-generated charts and visualizations become easier to produce, it's worth asking whether they can be trusted in academic and clinical research settings. This project assesses a range of AI platforms on their ability to generate accurate, clear, and effective visualizations, examining their strengths, limitations, usability, and risks in order to identify best practices for responsible use.
+<br>
