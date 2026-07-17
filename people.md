@@ -34,13 +34,13 @@ Hi everyone! I'm Pharel Adjeyi, a rising third-year Bachelor of Science in Nursi
 
 I'm a medical student at Loyola Stritch (Class of 2027) and a Graduate Research Assistant in the Health Informatics and Data Science lab. My research examines how AI/ML tools translate into real clinical impact at the system, provider, and patient level. I serve as first author on a study of paramedic perceptions of an ML-based stroke triage tool, and as a co-investigator on a retrospective study quantifying the financial burden of stroke mistriage at non-specialized hospitals. I also contribute to a multimodal clinical modeling project on MIMIC-IV and a clinical NLP project for schema-guided information extraction, and I lead the implementation science work connecting these tools to real EMS workflows through CFIR analysis and paramedic-centric interface design.
 
-### Michael
+### Michael Saban
 
 ![Michael Saban](/images/michael.jpg)
 
 I'm a Graduate Research Assistant in the Health Informatics and Data Science lab, working on multimodal machine learning for clinical outcomes. I built an end-to-end fusion pipeline on MIMIC-IV predicting 30-day post-discharge mortality, comparing early, intermediate, and late fusion of structured EHR data and clinical notes across models including TabPFN, XGBoost, and BioClinical-ModernBERT, along with a LoRA fine-tuned Llama-3. I also developed a hybrid dense and BM25 retrieval system with an LLM verification stage for schema-guided clinical information extraction, submitted to the MEDIQA-SYNUR 2026 shared task, and I develop and validate machine learning models on EMS data to predict stroke and severe stroke events for prehospital triage.
 
-### Dhruvin
+### Dhruvin Patel
 
 ![Dhruvin Patel](/images/dhruvin.jpg)
 
